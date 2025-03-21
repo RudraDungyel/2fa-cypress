@@ -1,0 +1,14 @@
+{
+  "name": "my-cypress-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^14.2.0"
+  },
+  "dependencies": {
+    "otplib": "^12.0.1",
+    "qrcode": "^1.5.4",
+    "speakeasy": "^2.0.0"
+  }
+}
