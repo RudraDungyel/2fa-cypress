@@ -22,14 +22,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Install Mochawesome reporter
-        run: yarn add --dev mochawesome mochawesome-merge mochawesome-report-generator
-
       - name: Run Cypress tests
         run: |
           npx cypress run \
-            --reporter mochawesome \
-            --reporter-options "reportDir=cypress/reports,overwrite=false,html=false,json=true"
         continue-on-error: true
 
       - name: Merge reports
