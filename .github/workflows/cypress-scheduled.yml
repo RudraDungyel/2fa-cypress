@@ -2,8 +2,7 @@ name: Cypress Scheduled Tests
 
 on:
   schedule:
-    # 6:15 PM Bhutan Time (BTT = UTC+6) → 12:15 UTC
-    - cron: '15 12 * * *'
+    - cron: '15 21 * * *'
   workflow_dispatch: # allow manual trigger
 
 jobs:
